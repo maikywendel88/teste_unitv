@@ -1,0 +1,55 @@
+/* Tokens visuais da landing page Ultra Jano */
+:root {
+  --uj-bg: #06060f;
+  --uj-surface: #14122a;
+  --uj-border: rgba(255, 255, 255, 0.1);
+  --uj-primary: #7c3aed;
+  --uj-primary-soft: #a855f7;
+  --uj-accent: #22d3ee;
+  --uj-highlight: #facc15;
+  --uj-text: #f6f5ff;
+  --uj-muted: #a6a3c2;
+  --uj-radius: 1.5rem;
+}
+
+.uj-page {
+  background-color: var(--uj-bg);
+  color: var(--uj-text);
+  background-image:
+    radial-gradient(1100px 620px at 12% -12%, rgba(124, 58, 237, 0.34), transparent 62%),
+    radial-gradient(900px 520px at 92% 4%, rgba(34, 211, 238, 0.18), transparent 60%);
+  background-repeat: no-repeat;
+}
+
+.uj-card {
+  border: 1px solid var(--uj-border);
+  border-radius: var(--uj-radius);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02));
+}
+
+.uj-glow {
+  box-shadow: 0 40px 80px -40px rgba(124, 58, 237, 0.85);
+}
+
+.uj-gradient-text {
+  background-image: linear-gradient(90deg, #facc15 0%, #c084fc 48%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.uj-section {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+@media (min-width: 768px) {
+  .uj-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+section[id] {
+  scroll-margin-top: 6rem;
+}
